@@ -7,7 +7,8 @@ html {
 }
 
 body {
-  background-color: #E7D4B6; /*beige cookie color*/
+  background-color: #DEC49A; /* deep beige cookie color*/
+  color: #F5EEE4; /*cream*/
 }
 
 .fortune-cookie-saying-wrapper {
@@ -19,8 +20,9 @@ body {
 }
 
 #fortune-cookie-text {
-  font-family: Courier, serif;
+  font-family: 'Alegreya', Courier, serif;
   color: #D3291D; /*dark red*/
+  font-size: 18px;
 }
 hr {
   border-style: solid;
@@ -29,6 +31,10 @@ hr {
 h1 {
   font-style: italic;;
 
+}
+
+#previous-fortunes-container {
+  text-align: left;
 }
 
 .generate-button {
