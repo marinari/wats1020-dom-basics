@@ -58,21 +58,21 @@ var fortunesList = [
 ]
 
 var generateFortune = function() {
-    var randomFortune = Math.floor(Math.random()*fortunesList.length);
+    var pickFortune = Math.floor(Math.random()*fortunesList.length);
 
     // TODO: Grab the paragraph with the ID
     // `fortune-cookie-text` to be able to insert text into that element.
-  	document.getElementById("fortune-cookie-text").innerHTML = (fortunesList[randomFortune]);
+  	document.getElementById("fortune-cookie-text").innerHTML = (fortunesList[pickFortune]);
 
     //new `li` element with the `document.createElement()` method.
   	var createNew = document.createElement("li");
     // Set the `innerHTML` of that element equal to the `innerHTML` of the `#fortune-cookie-text` element.
-  	createNew.innerHTML = (fortunesList[randomFortune]);
+  	createNew.innerHTML = (fortunesList[pickFortune]);
     // Select the `#previous-fortunes-container` container and use `appendChild()` to append the new `li` element you created above.
   	document.getElementById("previous-fortunes-container").appendChild(createNew);
 }
 console.log (fortunesList.length);
-console.log (randomNum);
+console.log (pickFortune);
 
 // TODO: Select a new (random) fortune cookie saying from the data stored in the
 // `fortunesList` variable. (HINT: You will use `Math.floor()` and
